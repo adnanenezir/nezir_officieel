@@ -123,8 +123,6 @@
   }
 }
 
-
-
 /* Token TAB */
 /* Grid container voor Tokenomics */
 .grid-container {
@@ -164,8 +162,9 @@
   margin: auto;
 }
 
-.coin-info p, strong{
-  font-family: 'Roboto';
+.coin-info p,
+strong {
+  font-family: "Roboto";
   font-size: larger;
   margin-right: auto !important;
 }
@@ -198,9 +197,11 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .coin-info {
+    margin-bottom: 5vh;
+  }
 }
-
-
 
 /*Roadmap styling */
 /* Algemene sectie styling */
@@ -298,9 +299,26 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
+  .roadmap-wrapper {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .roadmap-slider {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+    margin: 0; /* Verwijder eventuele ongewenste marges */
+    padding: 0; /* Zorgt ervoor dat er geen extra ruimte is */
+  }
+
   .roadmap-item {
-    flex: 0 0 calc(100% - 50px); /* 1 per rij op mobiel */
+    flex: 0 0 100%;
+    min-width: 100%;
+    text-align: center;
   }
 }
 
