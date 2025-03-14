@@ -1,0 +1,1037 @@
+/* Fonts */
+@font-face {
+  font-family: "TheBomb";
+  src: url("../fonts/TheBomb-7B9gw.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "TheBomb";
+}
+
+/*socials page*/
+.socials-section {
+  background: linear-gradient(225deg, #00bfff 20%, rgb(195, 243, 255) 50%);
+  padding: 40px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-top: 10px solid white;
+}
+.socials-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+}
+.socials-title {
+  font-size: 2rem;
+  color: #004466;
+  font-weight: bold;
+  position: relative;
+}
+.socials-highlight {
+  color: #0088cc;
+}
+.socials-text {
+  font-size: 1rem;
+  color: #005577;
+  position: relative;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+}
+.socials-social-icons {
+  margin-top: 20px;
+  position: relative;
+}
+.socials-social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+.socials-social-icons img {
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+.socials-social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/*coppy message voor ca*/
+
+#copy-message {
+  display: none;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/*div text center clipboard*/
+.text-center {
+  background-color: #236a85;
+  padding: 40px;
+  border: 5px solid white;
+  border-radius: 20px; /* Afgeronde hoeken */
+  text-align: center;
+  color: white;
+  width: 90%; /* Zorgt ervoor dat het niet te breed is op kleine schermen */
+  max-width: 800px; /* Maximale breedte voor grote schermen */
+  margin: 5vh auto; /* Zorgt ervoor dat de box gecentreerd blijft */
+}
+
+.text-center h4 {
+  margin-bottom: 20px;
+}
+
+.text-center p {
+  font-size: small;
+}
+
+.cta-btn {
+  font-size: medium;
+  color: white;
+  margin: auto;
+  word-break: break-all; /* Zorgt ervoor dat lange woorden breken */
+  overflow-wrap: break-word; /* Zorgt ervoor dat de tekst correct afbreekt */
+  max-width: 100%; /* Voorkomt dat de link breder wordt dan de container */
+}
+
+/* grid voor ca*/
+.grid-container-ca {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  padding: 10px;
+  margin-top: 60px;
+}
+.grid-container-ca > div {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+/* afbeelding gaat weg bij coppy clipboard als je verkleint */
+@media (max-width: 1024px) {
+  .grid-container-ca img {
+    display: none;
+  }
+}
+
+
+
+/* Token TAB */
+/* Grid container voor Tokenomics */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: -1vh;
+  padding: 4vh 0;
+  background: linear-gradient(225deg, #00bfff 20%, rgb(195, 243, 255) 50%);
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+  align-items: start;
+  text-align: center;
+}
+
+/* Sectie titels in dezelfde stijl */
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin: 15px 0 15px 0;
+}
+
+.coin-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  min-height: 400px;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background-color: #236a85;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.coin-info p, strong{
+  font-family: 'Roboto';
+  font-size: larger;
+  margin-right: auto !important;
+}
+
+/* Tokenomics Chart Container */
+.tokennomics-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 400px;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background-color: #236a85;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+#tokenomicsChart {
+  max-width: 60vw;
+  max-height: 60vh;
+}
+
+/* Media Query voor Mobile */
+@media screen and (max-width: 1024px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+/*Roadmap styling */
+/* Algemene sectie styling */
+.roadmap-section {
+  text-align: center;
+  margin-bottom: 150px;
+  margin-top: 60px;
+}
+
+.roadmap-section h2 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.roadmap-section p {
+  color: #236a85;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Roadmap container */
+.roadmap-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.roadmap-wrapper {
+  overflow: hidden;
+  flex: 1;
+  padding: 20px 0;
+}
+
+.roadmap-slider {
+  display: flex;
+  gap: 50px; /* Meer ruimte tussen de items */
+  transition: transform 0.4s ease-in-out;
+  margin: 0 0 0 50px;
+}
+
+/* Roadmap items */
+.roadmap-item {
+  flex: 0 0 calc(33.33% - 50px); /* 3 per rij, meer ruimte */
+  padding: 30px;
+  background: #236a85;
+  color: #236a85;
+  border-radius: 15px;
+  text-align: center;
+  min-width: 300px;
+  transition: transform 0.3s;
+}
+
+.roadmap-item:hover {
+  transform: scale(1.05);
+}
+
+.phase-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.roadmap-item h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.roadmap-item p {
+  font-size: 16px;
+  color: #ddd;
+}
+
+/* Pijltjes */
+.arrow {
+  background: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  color: #236a85;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .roadmap-item {
+    flex: 0 0 calc(50% - 50px); /* 2 per rij op tablets */
+  }
+}
+
+@media (max-width: 700px) {
+  .roadmap-item {
+    flex: 0 0 calc(100% - 50px); /* 1 per rij op mobiel */
+  }
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root {
+  --background-color: #00bfff; /* Background color for the entire website, including individual sections */
+  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #236a85; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: #236a85; /* The default color of the main navmenu links */
+  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+}
+
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
+.light-background {
+  --background-color: #f9f9f9;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #060606;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #252525;
+  --contrast-color: #ffffff;
+}
+
+.accent-background {
+  --background-color: #236a85;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #236a85;
+  --contrast-color: #ffffff;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+Clients Section
+--------------------------------------------------------------*/
+.clients {
+  padding: 20px 0;
+}
+
+.clients .client-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: auto;
+}
+
+.clients .client-logo img {
+  padding: 20px 40px;
+  width: auto;
+  height: auto;
+  transition: 0.3s;
+}
+
+.clients .client-logo img:hover {
+  filter: none;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media (max-width: 640px) {
+  .clients .client-logo img {
+    padding: 20px;
+  }
+}
+/*--------------------------------------------------------------
+# General Styling & Shared Classes
+--------------------------------------------------------------*/
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+/* PHP Email Form Messages
+------------------------------*/
+.php-email-form .error-message {
+  display: none;
+  background: #df1529;
+  color: #ffffff;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.php-email-form .sent-message {
+  display: none;
+  color: #ffffff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.php-email-form .loading {
+  display: none;
+  background: var(--surface-color);
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+.php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid var(--accent-color);
+  border-top-color: var(--surface-color);
+  animation: php-email-form-loading 1s linear infinite;
+}
+
+@keyframes php-email-form-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Pulsating Play Button
+------------------------------*/
+.pulsating-play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(
+    var(--accent-color) 50%,
+    color-mix(in srgb, var(--accent-color), transparent 75%) 52%
+  );
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.pulsating-play-btn:before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
+  animation: pulsate-play-btn 2s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid color-mix(in srgb, var(--accent-color), transparent 30%);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+.pulsating-play-btn:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.pulsating-play-btn:hover:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  animation: none;
+  border-radius: 0;
+}
+
+.pulsating-play-btn:hover:after {
+  border-left: 15px solid var(--accent-color);
+  transform: scale(20);
+}
+
+@keyframes pulsate-play-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Header
+--------------------------------------------------------------*/
+.header {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 15px 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+.header .logo {
+  line-height: 1;
+}
+
+.header .logo img {
+  max-height: 36px;
+  margin-right: 8px;
+}
+
+.header .logo h1 {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+/* Algemene stijl voor knoppen */
+.btn-chart,
+.btn-pinksale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+/* Stijl voor de Chart-knop */
+.btn-chart {
+  background: #007bff; /* Blauwe kleur voor de Chart-knop */
+  color: white;
+  margin-right: 10px; /* Ruimte tussen de knoppen */
+}
+
+.btn-chart:hover {
+  background: #0056b3;
+}
+
+/* Stijl voor de PinkSale-knop */
+.btn-pinksale {
+  background: #e6007a; /* Roze kleur voor PinkSale */
+  color: white;
+}
+
+.btn-pinksale:hover {
+  background: #b80060;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Navmenu - Desktop */
+
+@media (min-width: 1200px) {
+  .navmenu {
+    padding: 0;
+  }
+
+  .navmenu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  .navmenu li {
+    position: relative;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    color: var(--nav-color);
+    padding: 18px 15px;
+    font-size: 16px;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  .navmenu a i,
+  .navmenu a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    transition: 0.3s;
+  }
+
+  .navmenu li:last-child a {
+    padding-right: 0;
+  }
+
+  .navmenu li:hover > a,
+  .navmenu .active,
+  .navmenu .active:focus {
+    color: var(--nav-hover-color);
+  }
+
+  .navmenu .dropdown ul {
+    margin: 0;
+    padding: 10px 0;
+    background: var(--nav-dropdown-background-color);
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    left: 14px;
+    top: 130%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 4px;
+    z-index: 99;
+  }
+
+  .navmenu .dropdown ul li {
+    min-width: 200px;
+  }
+
+  .navmenu .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: none;
+    color: var(--nav-dropdown-color);
+  }
+
+  .navmenu .dropdown ul a i {
+    font-size: 12px;
+  }
+
+  .navmenu .dropdown ul a:hover,
+  .navmenu .dropdown ul .active:hover,
+  .navmenu .dropdown ul li:hover > a {
+    color: var(--nav-dropdown-hover-color);
+  }
+
+  .navmenu .dropdown:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+
+  .navmenu .dropdown .dropdown ul {
+    top: 0;
+    left: -90%;
+    visibility: hidden;
+  }
+
+  .navmenu .dropdown .dropdown:hover > ul {
+    opacity: 1;
+    top: 0;
+    left: -100%;
+    visibility: visible;
+  }
+}
+
+/* Navmenu - Mobile */
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    color: var(--nav-color);
+    font-size: 28px;
+    line-height: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .navmenu {
+    padding: 0;
+    z-index: 9997;
+  }
+
+  .navmenu ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    inset: 60px 20px 20px 20px;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 6px;
+    background-color: var(--nav-mobile-background-color);
+    overflow-y: auto;
+    transition: 0.3s;
+    z-index: 9998;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    color: var(--nav-dropdown-color);
+    padding: 10px 20px;
+    font-family: var(--nav-font);
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  .navmenu a i,
+  .navmenu a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  }
+
+  .navmenu a i:hover,
+  .navmenu a:focus i:hover {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+  }
+
+  .navmenu a:hover,
+  .navmenu .active,
+  .navmenu .active:focus {
+    color: var(--nav-dropdown-hover-color);
+  }
+
+  .navmenu .active i,
+  .navmenu .active:focus i {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    transform: rotate(180deg);
+  }
+
+  .navmenu .dropdown ul {
+    position: static;
+    display: none;
+    z-index: 99;
+    padding: 10px 0;
+    margin: 10px 20px;
+    background-color: var(--nav-dropdown-background-color);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navmenu .dropdown ul ul {
+    background-color: rgba(33, 37, 41, 0.1);
+  }
+
+  .navmenu .dropdown > .dropdown-active {
+    display: block;
+    background-color: rgba(33, 37, 41, 0.03);
+  }
+
+  .mobile-nav-active {
+    overflow: hidden;
+  }
+
+  .mobile-nav-active .mobile-nav-toggle {
+    color: #fff;
+    position: absolute;
+    font-size: 32px;
+    top: 15px;
+    right: 15px;
+    margin-right: 0;
+    z-index: 9999;
+  }
+
+  .mobile-nav-active .navmenu {
+    position: fixed;
+    overflow: hidden;
+    inset: 0;
+    background: rgba(33, 37, 41, 0.8);
+    transition: 0.3s;
+  }
+
+  .mobile-nav-active .navmenu > ul {
+    display: block;
+  }
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background: var(--background-color);
+  transition: all 0.6s ease-out;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #ffffff;
+  border-color: var(--accent-color) transparent var(--accent-color) transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1.5s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: var(--contrast-color);
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 15px;
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 100px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+  section,
+  .section {
+    scroll-margin-top: 66px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  min-height: 70vh;
+  position: relative;
+  padding: 120px 0 60px 0;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.hero p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin: 5px 0 30px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.hero .btn-get-started {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-family: var(--heading-font);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 12px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.hero .btn-get-started:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+.hero .btn-watch-video {
+  font-size: 16px;
+  transition: 0.5s;
+  margin-left: 25px;
+  color: var(--default-color);
+  font-weight: 600;
+}
+
+.hero .btn-watch-video i {
+  color: var(--accent-color);
+  font-size: 32px;
+  transition: 0.3s;
+  line-height: 0;
+  margin-right: 8px;
+}
+
+.hero .btn-watch-video:hover {
+  color: var(--accent-color);
+}
+
+.hero .btn-watch-video:hover i {
+  color: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+.hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  .hero .btn-get-started,
+  .hero .btn-watch-video {
+    font-size: 13px;
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}

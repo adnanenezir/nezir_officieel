@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Nezir Coin</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Text fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- chart script -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    .star {
+            position: absolute;
+            color: white;
+            font-size: 20px;
+            pointer-events: none;
+            animation: fadeOut 2s linear forwards;
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1; transform: scale(1); }
+            100% { opacity: 0; transform: scale(2); }
+        }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Nezir Coin</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Tokenomics">Tokenomics</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#Socials">Socials</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+    
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section id="About" class="hero section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
+            <h1>Test template 1</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <div class="d-flex">
+              <a href="https://dexscreener.com/" target="_blank" class="btn-chart">Chart</a>
+              <a href="https://www.pinksale.finance/" target="_blank" class="btn-pinksale">PinkSale</a>
+          </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/afbeelding.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+        </div>
+      </div>
+
+ <!-- coppy clipboard-->
+<p></p>
+<div class="grid-container-ca">
+  <div>
+    <img src="assets/img/pepe.png" width="300px" height="300px">
+  </div>
+  <div>
+    <h2><center>Contract Address</center></h2>
+    <div class="text-center" style="position: relative;">
+      <h4>Copy to clipboard</h4>
+      <a class="cta-btn" href="#" onclick="copyToClipboard(event)">ca: 0x409CF201E81FC1e8538eb329e20A8513fCEE996C</a>
+      <p id="copy-message">Copied!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Clients Section -->
+<section id="clients" class="clients">
+  <div class="container" data-aos="fade-up">
+    <div class="row gy-4">
+
+      <div class="col-xl-2 col-md-3 col-6 client-logo">
+        <a href="https://www.pinksale.finance/" target="_blank"><img src="assets/img/clients/client-1.png" class="img-fluid" ></a>
+  
+      </div><!-- End Client Item -->
+
+      <div class="col-xl-2 col-md-3 col-6 client-logo">
+        <a href="https://dexscreener.com/" target="_blank"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></a>
+      </div><!-- End Client Item -->
+
+      <div class="col-xl-2 col-md-3 col-6 client-logo">
+        <a href="https://www.dextools.io/app/en/pairs" target="_blank"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></a>
+      </div><!-- End Client Item -->
+
+      <div class="col-xl-2 col-md-3 col-6 client-logo">
+        <a href="https://www.coingecko.com/" target="_blank"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></a>
+      </div><!-- End Client Item -->
+
+    </div>
+  </div>
+
+</section><!-- /Clients Section -->
+
+
+<!-- TokenNomics -->
+<div class="grid-container" id="Tokenomics">
+  <div class="coin-info">
+    <h2 class="section-title">Token Info</h2>
+    <div class="token-info-box">
+      <p><strong>Token Type:</strong> BEP-20</p>
+      <p><strong>Token Name:</strong> Flokita</p>
+      <p><strong>Total Supply:</strong> 100,000,000,000 FLIKITA</p>
+      <p>600M for Presale</p>
+      <p>50M for CEX</p>
+      <p><strong>Tax:</strong> 0% ON BUY AND SELL</p>
+    </div>
+  </div>
+
+  <div class="tokennomics-container">
+    <h2 class="section-title">Tokenomics</h2>
+    <div id="chart-container">
+      <canvas id="tokenomicsChart"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- slideshow phases roadmap -->
+<div class="roadmap-section" id="roadmap">
+  <h2>Nezir Coin Roadmap</h2>
+  <p>Dit is de roadmap voor Nezir Coin. Tekst hier kort.</p>
+  <div class="roadmap-container">
+      <button class="arrow left" onclick="slideLeft()">&#10094;</button>
+      <div class="roadmap-wrapper">
+          <div class="roadmap-slider">
+              <div class="roadmap-item">
+                  <div class="phase-icon">⏳</div>
+                  <h3>Phase 1</h3>
+                  <p>Launching during the Year of the Snake, aligning with Chinese tradition.</p>
+              </div>
+              <div class="roadmap-item">
+                  <div class="phase-icon">📈</div>
+                  <h3>Phase 2</h3>
+                  <p>Bringing back meme coin liquidity to Binance Smart Chain.</p>
+              </div>
+              <div class="roadmap-item">
+                  <div class="phase-icon">👥</div>
+                  <h3>Phase 3</h3>
+                  <p>A decentralized movement that thrives on holders and engagement.</p>
+              </div>
+              <div class="roadmap-item">
+                  <div class="phase-icon">🚀</div>
+                  <h3>Phase 4</h3>
+                  <p>Expanding to new markets and increasing adoption.</p>
+              </div>
+          </div>
+      </div>
+      <button class="arrow right" onclick="slideRight()">&#10095;</button>
+  </div>
+</div>
+  <!-- socials -->
+  <div class="socials-section" id="Socials">
+    <h1 class="socials-title">Join <span class="socials-highlight">Nezir Coin</span> Community</h1>
+    <p class="socials-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nobis earum eveniet dicta voluptatibus facere vero sed quasi molestiae, ea aut vitae veniam, cum, aliquam aspernatur officia voluptates odio magni?</p>
+    <div class="socials-social-icons">
+        <a href="#"><img src="assets/img/telegram_logo.png" alt="Telegram"></a>
+        <a href="#"><img src="assets/img/twitter_logo.png" alt="Twitter"></a>
+        <a href="#"><img src="assets/img/reddit_logo.png" alt="Reddit"></a>
+        <a href="#"><img src="assets/img/discord_logo.png" alt="Discord"></a>
+        <a href="#"><img src="assets/img/instagram_logo.png" alt="Instagram"></a>
+    </div>
+  </div>
+
+  <!-- Scroll Top button rechts onder -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>   <!-- Deze moet blijven anders neukt pagina -->
+
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+<!-- script voor coppy clipboard chart -->
+<!-- script voor coppy clipboard chart -->
+<!-- script voor coppy clipboard chart -->
+<script>
+  function copyToClipboard(event) {
+    event.preventDefault(); // Voorkomt dat de link iets doet
+
+    // De tekst ophalen en "ca: " verwijderen
+    const text = event.target.innerText.replace("ca: ", "");
+
+    // Tekst kopiëren naar klembord
+    navigator.clipboard.writeText(text).then(() => {
+      const message = document.getElementById("copy-message");
+      message.style.display = "block"; // Toon de melding
+
+      // Laat de melding na 2 seconden verdwijnen
+      setTimeout(() => {
+        message.style.display = "none";
+      }, 2000);
+    }).catch(err => console.error('Fout bij kopiëren:', err));
+  }
+</script>
+
+
+<!-- script voor tokenomics chart -->
+<!-- script voor tokenomics chart -->
+<!-- script voor tokenomics chart -->
+    <script>
+      const data = {
+        labels: [
+          "Presale",
+          "Liquidity",
+          "Team tokens",
+          "CEX, partnerships, burn",
+        ],
+        datasets: [
+          {
+            data: [40, 19.38, 10, 15.62],
+            backgroundColor: ["#0077b6", "#0096c7", "#00b4d8", "#48cae4"], // Blauwe tinten
+            hoverOffset: 4,
+          },
+        ],
+      };
+
+      // Laad de afbeelding één keer vooraf
+      const img = new Image();
+      img.src = "assets/img/afbeelding.png"; // Vervang met je eigen pad
+      img.onload = function () {
+        chartInstance.update(); // Update de chart zodra de afbeelding is geladen
+      };
+
+      // Plugin om het logo in het midden van de donut te houden
+      const centerImagePlugin = {
+        id: "centerImage",
+        afterDraw(chart) {
+          const ctx = chart.ctx;
+          const chartArea = chart.chartArea;
+          if (!chartArea) return;
+
+          const centerX = (chartArea.left + chartArea.right) / 2;
+          const centerY = (chartArea.top + chartArea.bottom) / 2;
+          const imgSize = chart.width / 6; // Pas de grootte aan
+
+          if (img.complete) {
+            ctx.drawImage(
+              img,
+              centerX - imgSize / 2,
+              centerY - imgSize / 2,
+              imgSize,
+              imgSize
+            );
+          }
+        },
+      };
+
+      const config = {
+        type: "doughnut",
+        data: data,
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: "bottom",
+              labels: {
+                color: "white",
+                usePointStyle: true,
+                boxWidth: 10,
+                padding: 20,
+                font: { size: 14 },
+              },
+              onClick: () => null, // Voorkomt klikken op legenda
+            },
+          },
+          animation: {
+            onComplete: function () {
+              // Teken het logo opnieuw na elke animatie (voorkomt verdwijning)
+              centerImagePlugin.afterDraw(this);
+            },
+          },
+        },
+        plugins: [centerImagePlugin],
+      };
+
+      const chartInstance = new Chart(
+        document.getElementById("tokenomicsChart"),
+        config
+      );
+    </script>
+
+<!-- SCRIPT VOOR ROADMAP -->
+<!-- SCRIPT VOOR ROADMAP -->
+<!-- SCRIPT VOOR ROADMAP -->
+<script>
+  let currentIndex = 0;
+  const slider = document.querySelector(".roadmap-slider");
+  const items = document.querySelectorAll(".roadmap-item");
+  
+  function getVisibleItems() {
+      const containerWidth = document.querySelector(".roadmap-wrapper").clientWidth;
+      const itemWidth = items[0].clientWidth + 50; // Breedte inclusief gap
+      return Math.floor(containerWidth / itemWidth);
+  }
+  
+  function getMaxIndex() {
+      return Math.max(0, items.length - getVisibleItems());
+  }
+  
+  function slideLeft() {
+      if (currentIndex > 0) {
+          currentIndex--;
+          updateSlider();
+      }
+  }
+  
+  function slideRight() {
+      if (currentIndex < getMaxIndex()) {
+          currentIndex++;
+          updateSlider();
+      }
+  }
+  
+  function updateSlider() {
+      const itemWidth = items[0].clientWidth + 50; // Breedte inclusief gap
+      const scrollAmount = currentIndex * itemWidth;
+      slider.style.transform = `translateX(-${scrollAmount}px)`;
+  }
+  
+  window.addEventListener("resize", () => {
+      currentIndex = Math.min(currentIndex, getMaxIndex()); // Zorgt ervoor dat je altijd tot het einde kan scrollen
+      updateSlider();
+  }); 
+  </script>
+
+<script>
+  function createStar() {
+      const star = document.createElement("div");
+      star.classList.add("star");
+      star.innerText = "★";
+
+      // Willekeurige grootte tussen 10px en 40px
+      const starSize = Math.random() * 30 + 10;
+      star.style.fontSize = `${starSize}px`;
+
+      // Veiligheidsmarge zodat de ster binnen de pagina blijft
+      const margin = 50;
+
+      // Gebruik volledige pagina-hoogte en breedte
+      const pageWidth = document.body.scrollWidth;
+      const pageHeight = document.body.scrollHeight;
+
+      const x = Math.random() * (pageWidth - margin * 2) + margin;
+      const y = Math.random() * (pageHeight - margin * 2) + margin;
+
+      star.style.left = `${x}px`;
+      star.style.top = `${y}px`;
+
+      document.body.appendChild(star);
+
+      // Verwijder ster na animatie
+      setTimeout(() => {
+          star.remove();
+      }, 2000);
+  }
+
+  // Laat elke 100ms een ster verschijnen
+  setInterval(createStar, 50);
+</script>
+
+</body>
+</html>
